@@ -18,5 +18,10 @@ namespace ProyectoC_Coderhouse
             this._comentarios = comentarios;
             this.idUsuario = idUsuario;
         }
+
+        public void mostrarTodo()
+        {
+            Console.WriteLine("Id de la venta: " + this._id + ". Comentarios: " + this._comentarios + ". Usuario ID: " + this.idUsuario);
+        }
     }
 }

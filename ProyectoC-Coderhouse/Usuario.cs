@@ -24,5 +24,10 @@ namespace ProyectoC_Coderhouse
             this._contrasena = contrasena;
             this._mail = mail;
         }
+
+        public void mostrarTodo()
+        {
+            Console.WriteLine("ID: " + this._id + ". Nombre: " + this._nombre + " Apellido: " + this._apellido + ". Nombre de usuario " + this._nombreUsuario + ". Mail de registro: " + this._mail);
+        }
     }
 }

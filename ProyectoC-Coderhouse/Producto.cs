@@ -15,7 +15,7 @@ namespace ProyectoC_Coderhouse
         private int _stock;
         private int _idUsuario;
 
-        public Producto(int id, string descripcion, float costo, float precioVenta, int stock, int idUsuario )
+        public Producto(int id, string descripcion, float costo, float precioVenta, int stock, int idUsuario)
         {
             this._id = id;
             this._descripcion = descripcion;
@@ -23,6 +23,11 @@ namespace ProyectoC_Coderhouse
             this._precioVenta = precioVenta;
             this._stock = stock;
             this._idUsuario = idUsuario;
+        }
+
+        public void mostrarTodo()
+        {
+            Console.WriteLine("Objeto id: " + this._id + ". Descripción: " + this._descripcion + ". Costo: " + this._costo + ". Precio de venta: " + this._precioVenta + ". Stock: " + this._stock + ". Del usuario id: " + this._idUsuario);
         }
     }
 }
